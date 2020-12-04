@@ -1,6 +1,6 @@
 const Router = require('express-promise-router');
 const router = new Router();
-//const { getPacientes, putPaciente, postPaciente, deletePaciente } = require('../controllers/index.controller')
+
 const { putLogin } = require('../controllers/loguin.controller')
 const { postProfesional } = require('../controllers/profesional.controller')
 const { postPaciente, putPaciente } = require('../controllers/paciente.controller')
@@ -8,10 +8,6 @@ const { postRegistro } = require('../controllers/registro.controller')
 const { getBarrio,getCiudad,getEps,getUniversidad,getPacientes,getProfesional,getParentesco,
     getMedicamento,getGeoplace,getAvgNeighbor,getAvgEdad,getInventario  } = require('../controllers/gets.controller')
 
-/*router.get('/consultar', getPacientes);
-router.post('/insertar', postPaciente);
-router.put('/actualizar', putPaciente);
-router.delete('/eliminar', deletePaciente);*/
 
 router.put('/login', putLogin);
 router.post('/insertarProfesional', postProfesional);
